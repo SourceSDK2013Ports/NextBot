@@ -113,7 +113,7 @@ CON_COMMAND_F( nb_delete_all, "Delete all non-player NextBot entities.", FCVAR_C
 	{
 		const char *teamName = args[1];
 
-		for( uint i=0; i < g_Teams.size(); ++i )
+		for( int i=0; i < g_Teams.Size(); ++i )
 		{
 			if ( FStrEq( teamName, g_Teams[i]->GetName() ) )
 			{
